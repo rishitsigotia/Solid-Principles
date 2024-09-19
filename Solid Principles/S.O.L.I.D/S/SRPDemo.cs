@@ -1,4 +1,4 @@
-﻿namespace Solid_Principles.S.O.L.I.D
+﻿namespace Solid_Principles.S.O.L.I.D.S
 {
     //Single Responsibility Principle
     //Consider a User Registration method that has to be there.
