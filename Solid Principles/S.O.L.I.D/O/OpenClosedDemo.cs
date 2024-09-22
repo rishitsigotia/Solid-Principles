@@ -95,6 +95,18 @@ namespace Solid_Principles.S.O.L.I.D.O
 				return salary * .05M;
 			}
 		}
+		public class ContractEmployee : Employee
+		{
+			public ContractEmployee()
+			{ }
+
+			public ContractEmployee(int id, string name) : base(id, name)
+			{ }
+			public override decimal CalculateBonus(decimal salary)
+			{
+				throw new NotImplementedException();
+			}
+		}
 		class Program
 		{
 			static void Main(string[] args)
