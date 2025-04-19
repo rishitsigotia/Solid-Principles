@@ -1,0 +1,19 @@
+﻿1.Spotting Violations:
+
+Look for classes with conditional logic (if/else, switch) that checks types/values to decide behavior.
+
+Example: A PaymentProcessor with ProcessCreditCard(), ProcessPayPal() methods.
+
+2.Defending Your Solution:
+
+Say: "I used polymorphism/interfaces to decouple the behavior. New features are added by creating new classes, not changing existing ones."
+
+Common Traps:
+
+3.Myth: "OCP means you can never modify existing code."
+
+Reality: Minimize changes to stable, tested code. Bug fixes are okay!
+
+4.Buzzwords to Use:
+
+"Abstraction over conditionals", "Strategy pattern", "Dependency Injection"
