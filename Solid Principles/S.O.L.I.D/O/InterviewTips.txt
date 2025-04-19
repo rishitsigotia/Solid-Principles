@@ -17,3 +17,26 @@ Reality: Minimize changes to stable, tested code. Bug fixes are okay!
 4.Buzzwords to Use:
 
 "Abstraction over conditionals", "Strategy pattern", "Dependency Injection"
+
+
+
+Q: "How does OCP differ from simple inheritance?"
+
+A: OCP uses abstraction (interfaces/base classes) to decouple high-level modules from low-level details. Inheritance is just one way to achieve it.
+
+Q: "What if a new feature requires changing existing behavior, not just adding?"
+
+A: If the abstraction is flawed, you’ll have to modify it (violating OCP). Stress: "Good abstractions anticipate likely changes."
+
+Q: "How does OCP relate to the Decorator pattern?"
+
+A: Decorator extends object behavior at runtime by wrapping objects, aligning with OCP (no modification of existing classes).
+
+Q: "Is OCP practical in fast-paced agile environments?"
+
+A: "Yes—investing in abstractions for frequently changing components saves time long-term. For stable code, YAGNI (You Ain’t Gonna Need It) may apply."
+
+Q: "Give a real-world example where you applied OCP."
+
+Sample Answer: "We had a logging system that initially supported only files. Using OCP, we created an ILogger interface, allowing us to add database logging and email alerts without touching the core logic."
+
